@@ -11,19 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController extends SpringBootServletInitializer {
 
-
-	@Override
+    @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(HelloController.class);
     } 
 
-	public static void main(String[] args) {
-		SpringApplication.run(HelloController.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(HelloController.class, args);
+    }
 
-	@GetMapping("/")
+    @GetMapping("/")
     public String home() {
         return "Olá, Mundo do SCM ADS Osório!";
     }
-
 }
