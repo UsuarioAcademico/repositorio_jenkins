@@ -22,6 +22,6 @@ public class HelloController extends SpringBootServletInitializer {
 
     @GetMapping("/")
     public String home() {
-        return "Olá, Mundo do SCM ADS Osório!";
+        return "Olá, Mundo! Versão 2 - Desenvolvimento de Software.";
     }
 }
